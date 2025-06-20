@@ -1,0 +1,17 @@
+# Môi trường ảo
+venv/
+.venv/
+
+# Cache của Python
+__pycache__/
+*.pyc
+
+# File biến môi trường (chứa thông tin bí mật)
+.env
+
+# Các file của IDE
+.idea/
+.vscode/
+# file data
+data/products_info.json
+data/chunked_documents.json
