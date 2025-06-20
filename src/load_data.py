@@ -1,12 +1,11 @@
 
 from sentence_transformers import SentenceTransformer
-# from chunker_text import process_products_with_chunking
 from db_loader import load_data
 import json
 import os
 from pinecone import Pinecone, ServerlessSpec
 from config import PINECONE_API_KEY
-from test import process_products_with_chunking
+from embedding import process_products_with_chunking
 def load_and_process_data():
     """
     Load product data, create chunks, generate embeddings, and store in MongoDB
